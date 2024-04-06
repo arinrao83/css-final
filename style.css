@@ -33,11 +33,14 @@ nav {
   padding: 4vw 0;
   z-index: 100;
 }
+nav>.menu{
+  display: none;
+}
 nav > .logo {
   width: 10vw;
   height: 5vh;
 }
-.logo > img {
+.logo >a> img {
   height: 100%;
   width: 100%;
 }
@@ -433,6 +436,9 @@ footer > .right {
   color: #cab973;
 }
 
+/* Mobile view 640px */
+
+/* header responsiveness */
 @media (max-width: 640px) {
   nav {
     width: 100vw;
@@ -457,10 +463,11 @@ footer > .right {
   }
   nav > .cta > a {
   }
-  .menu {
+  nav>.menu {
     background-color: #fff;
     padding: 1.4vh 2vh;
     border-radius: 50%;
+    display: inline-block;
   }
   .menu > i {
     font-size: 2.3vh;
@@ -470,6 +477,7 @@ footer > .right {
   }
 }
 
+/* about responsiveness */
 @media (max-width: 640px) {
   .about > .hero {
     width: 100%;
@@ -503,6 +511,7 @@ footer > .right {
   }
 }
 
+/* description responsiveness */
 @media (max-width: 640px){
     .description {
         height: 130vh;
@@ -517,6 +526,196 @@ footer > .right {
       }
 }
 
+/* product responsiveness */
 @media (max-width: 640px) {
-    
+  .products {
+    height: 470vh;
+  }
+.products>.grid{
+  height: 100%;
+}
+  .products > .grid > .box {
+    width: 80vw;
+  }
+  .products > .cta {
+    transform: translateX(30%);
+    margin-top: -4vw;
+  }
+}
+
+/* contact responsiveness */
+@media (max-width: 640px){
+  .contact{
+    height: 60vh;
+  }
+  .contact > .container{
+    padding: 0 6vw;
+    margin-top: 30vw;
+  }
+}
+
+/* footer responsiveness */
+@media (max-width: 640px){
+  footer{
+    flex-direction: column;
+    padding: 3vw 2vw;
+    height: 40vh;
+  }
+  footer>.left{
+    width: 100%;
+    gap: 8vw;
+    padding: 1vw 3vw;
+  }
+  footer>.left>.logo{
+    width: 20vw;
+  }
+  footer>.right{
+    width: 100%;
+    padding: 8vw 0vw;
+  }
+  footer>.right>.links{
+    gap: 0;
+  }
+
+}
+
+/* Ipad view */
+/* header responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px) {
+  nav {
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+  }
+  nav > .logo {
+    height: 5vh;
+    width: 20vw;
+    /* position: absolute; */
+    left: 10%;
+  }
+  nav > .links {
+    display: none;
+  }
+  nav > .links > a {
+  }
+  nav > .cta {
+    display: none;
+  }
+  nav > .cta > a {
+  }
+  nav>.menu {
+    background-color: #fff;
+    padding: 1.5vh 2vh;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .menu > i {
+    font-size: 2.3vh;
+  }
+  .menu > .inner {
+    display: none;
+  }
+}
+/* about responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px){
+  .about > .hero {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 2vh;
+    z-index: 10;
+  }
+  .about > .hero > h1 {
+    font-size: 5vh;
+    margin-top: -6vw;
+    margin-bottom: 5vw;
+    color: #908144;
+  }
+
+  .about > .center-img {
+    /* display: none; */
+  }
+  .about > .center-img>img{
+    width: 50%;
+  }
+  .about > .leaves1 {
+    height: 25vh;
+    position: absolute;
+    top: 10%;
+  }
+
+  .about > .leaves2 {
+    height: 25vh;
+    bottom: 10%;
+  }
+}
+/* description responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px) {
+  .description > .hero > .text {
+    padding: 0 5vw;
+  }
+  .description > .hero > .flexbox {
+    gap: 8vh;
+  }
+}
+/* product responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px) {
+  .products {
+    height: 250vh;
+  }
+  .products>.grid{
+    height: 100%;
+  }
+  .products > .grid > .box {
+    width: 45vw;
+  }
+  .products > .cta {
+    transform: translateX(37%);
+    margin-top: -2vw;
+  }
+}
+
+/* contact responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px){
+
+.contact > .container {
+height: 30vh;
+width: 90vw;
+margin-top: 15vw;
+}
+  .contact > .container{
+    padding: 0 4vw;
+  }
+}
+
+/* footer responsiveness */
+@media ( min-width: 768px) and  (max-width: 1024px){
+  footer{
+    flex-direction: column;
+    padding: 3vw 2vw;
+    height: 45vh;
+  }
+  footer>.left{
+    width: 100%;
+    gap: 8vw;
+    padding: 1vw 3vw;
+  }
+  footer>.left>.logo{
+    width: 20vw;
+  }
+  footer>.right{
+    width: 100%;
+    padding: 8vw 0vw;
+  }
+  footer>.right>.links{
+    gap: 0;
+  }
+
 }
